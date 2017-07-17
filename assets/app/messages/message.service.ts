@@ -14,7 +14,7 @@ export class MessageService {
 
     constructor(private http: Http, private errorService: ErrorService) { }
 
-    appUrl : string = "https://mean-messanger.herokuapp.com/";
+    appUrl : string = "http://localhost:3000/";
     addMessage(message: Message) {
         const headers = new Headers({ 'Content-Type': 'application/json' });
         const token = localStorage.getItem('token') ? '?token=' + localStorage.getItem('token') : '';
