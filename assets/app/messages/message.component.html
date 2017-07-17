@@ -1,0 +1,20 @@
+<article class="panel panel-default">
+    <div class="panel-body row">
+        <div class="col-md-12">
+            {{message.content}}
+
+        </div>
+    </div>
+    <footer class="panel-footer clearfix">
+        <div class="row">
+            <div class="author col-md-6">
+                {{message.username}}
+            </div>
+            <div class="config col-md-6" *ngIf="belongsToUser()">
+                <a class="pull-right col-md-offset-1" (click)="onDelete()"><i>Delete</i></a>
+                <a class="pull-right" (click)="onEdit(message)"><i>Edit</i></a>
+            </div>
+        </div>
+
+    </footer>
+</article>
