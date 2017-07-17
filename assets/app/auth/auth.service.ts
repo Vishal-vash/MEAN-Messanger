@@ -10,7 +10,7 @@ import { ErrorService } from "../errors/error.service";
 export class AuthService {
 
     constructor(private http : Http, private errorService : ErrorService) {}
-    appUrl : string = "https://mean-messanger.herokuapp.com/";
+    appUrl : string = "http://localhost:3000/";
     signUp(user : User){
         const headers = new Headers({'Content-Type' :  'application/json'});
         return this.http.post(this.appUrl+'user', JSON.stringify(user), {headers : headers})
