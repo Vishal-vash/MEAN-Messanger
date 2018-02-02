@@ -6,7 +6,7 @@ A Mean Stack messagnger app with Authentication
     npm install
 2. Build app using 
     For Dev Env ---->  npm run build
-    For Prod Env ---->  npm run build
+    For Prod Env ---->  npm run build:prod
     
 3. Run MongoDb from your localhost
 4. Start Server Using 
